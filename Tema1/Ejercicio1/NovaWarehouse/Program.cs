@@ -17,4 +17,3 @@ if (isExpress)
     totalCost += 5;  //preguntar si se puede hacer
 }
 Console.WriteLine($"Shipping cost whith isExpress: {totalCost:C2}");
-bool iss = false;
