@@ -17,3 +17,8 @@ if (isExpress)
     totalCost += 5;  //preguntar si se puede hacer
 }
 Console.WriteLine($"Shipping cost whith isExpress: {totalCost:C2}");
+
+//2.Muestra también el peso convertido a libras (weightKg * 2.20462)
+
+double pesoLibras = (weightKg * 2.20462);
+Console.WriteLine($"El peso en libras es {pesoLibras:C2}");
