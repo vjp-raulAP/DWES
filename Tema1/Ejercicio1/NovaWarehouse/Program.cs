@@ -71,7 +71,7 @@ static decimal CalculateDiscount(Customer customer, Order order)
 
 Console.Write("Enter quantity for SKU-4471: ");
 string? rawQuantity = Console.ReadLine();
-if (!int.TryParse(rawQuantity, out int quantity) || quantity <= 0)
+if (!int.TryParse(rawQuantity, out int quantity) || quantity <= 0 || quantity > 500)
 {
 Console.WriteLine("Invalid quantity. Order line rejected.");
 return;
@@ -79,7 +79,9 @@ return;
 Console.WriteLine($"Added {quantity} units of SKU-4471 to the order.");
 
 
+//1. Añade un límite máximo: rechaza cantidades superiores a 500 unidades por línea
 
+//if (!int.TryParse(rawQuantity, out int quantity) || quantity <= 0 || quantity > 500)
 
 
 class Customer
